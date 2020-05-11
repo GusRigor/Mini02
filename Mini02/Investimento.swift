@@ -81,6 +81,7 @@ class Investimento {
         return self.save
     }
     func resetSave(){
+        UserDefaults.standard.removeObject(forKey: "progresso")
         UserDefaults.standard.removeObject(forKey: "Investimento.investimentoSelecionado")
         UserDefaults.standard.removeObject(forKey: "Investimento.aplicada")
         UserDefaults.standard.removeObject(forKey: "Investimento.imposto")
